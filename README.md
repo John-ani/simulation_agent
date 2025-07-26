@@ -104,13 +104,13 @@ Leverage output_formatter.py to produce well-structured results, and generate a 
 Bonus: Diagnostic Report
 The project includes an optional one-page memo (report.txt) that covers:
 
-Diagnosis — what’s really going wrong
+Diagnosis: what’s really going wrong
 
-Strategic Actions — 2–3 key recommendations
+Strategic Actions: 2–3 key recommendations
 
-Forecast — likelihood of success and why
+Forecast: likelihood of success and why
 
-Commentary — insight into agent/seller behavior
+Commentary: insight into agent/seller behavior
 
 **Contributions and Feedback**
 
