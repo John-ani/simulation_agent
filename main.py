@@ -1,3 +1,4 @@
+import json
 from input_handler import get_user_input
 from prompt_builder import build_prompt
 from integrator import call_openai_api
@@ -12,7 +13,13 @@ def main():
     parsed_output = parse_response(response_text)
     scored_output = add_scoring_logic(parsed_output)
     final_output = format_output(scored_output)
+    
+    # Print the output
     print(final_output)
+    
+    # Save the output to a JSON file
+    with open('output.json', 'w') as json_file:
+        json.dump(final_output, json_file, indent=2)
 
 if __name__ == "__main__":
     main()

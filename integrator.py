@@ -1,11 +1,17 @@
-import openai # type: ignore
+from openai import OpenAI
 from config import API_KEY
 
+# Initialize OpenAI client
+client = OpenAI(api_key=API_KEY)
+
 def call_openai_api(prompt):
-    openai.api_key = API_KEY
-    response = openai.Completion.create(
-        engine="text-davinci-003",
-        prompt=prompt,
-        max_tokens=256
+    # Call OpenAI API using the client
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": prompt}
+        ]
     )
-    return response.choices[0].text.strip()
+    # Extract and return the content of the response
+    return response.choices[0].message['content'].strip()
