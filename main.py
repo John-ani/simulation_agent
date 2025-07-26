@@ -4,6 +4,7 @@ from integrator import call_openai_api
 from response import parse_response
 from scoring import add_scoring_logic
 from output_formatter import format_output
+import json
 
 def generate_report(output):
     """
@@ -63,6 +64,10 @@ def main():
 
     # Generate and display the analysis report
     generate_report(scored_output)
+
+    # Save the structured JSON output to output.json
+    with open('output.json', 'w') as json_file:
+        json.dump(scored_output, json_file, indent=2)
 
 if __name__ == "__main__":
     # Entry point of the application
