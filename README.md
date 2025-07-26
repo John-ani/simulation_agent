@@ -5,6 +5,7 @@ This project is a simulation-led decision intelligence platform designed to mode
 ## Project Structure
 
 simulation_agent/
+
 │
 ├── main.py # Entry point for the simulation
 
