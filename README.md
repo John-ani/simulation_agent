@@ -36,22 +36,6 @@ Create and Activate a Virtual Environment:
 bash
 python -m venv env
 source env/bin/activate     # On Windows use `.\env\Scripts\activate`
-###Install Dependencies:
-
-bash
-pip install openai
-Configure the API Key:
-
-Set your OpenAI API key as an environment variable:
-
-On macOS/Linux:
-
-bash
-export OPENAI_API_KEY='your-api-key'
-On Windows:
-
-cmd
-set OPENAI_API_KEY=your-api-key
 
 Running the Application
 Execute the Program:
@@ -59,20 +43,29 @@ Execute the Program:
 bash
 python main.py
 
-***Input Required***
+##***Input Required***
+
 **Property Scenario:** Description of the property.
+
 **Time on Market:** Specify how long the property has been listed. 
+
 **Current Status:** Provide the current market and seller situation.
+
 **Goal:** Objective you want to achieve.
+
 **Constraint:** Any limitations or constraints.
-**Expected Output:**
 
 
-***Thought Process***
+
+
+##***Thought Process***
+
 **Objective**
+
 The purpose of this project is to simulate a real estate scenario and provide actionable insights using natural language processing capabilities.
 
 **Design**
+
 Modular Structure:
 Each component of the project (input handling, API interaction, response parsing) is modularized into separate scripts. This enhances maintainability and readability.
 
@@ -83,6 +76,7 @@ Output and Reporting:
 The output is structured in JSON format for easy consumption. A detailed report is also generated to provide qualitative insights.
 
 **Development Workflow**
+
 Input Handling:
 Collect user input for the property scenario, goals, and constraints using input_handler.py.
 
@@ -96,7 +90,9 @@ Output Generation:
 Leverage output_formatter.py to produce well-structured results, and generate a detailed report.txt for summary and insights.
 
 **Contributions and Feedback**
+
 Contributions are welcome! Feel free to fork this repository and submit pull requests. For issues or questions, please create an issue in the issue tracker.
 
 **License**
+
 This project is licensed under the MIT License.
