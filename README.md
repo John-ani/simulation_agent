@@ -7,14 +7,23 @@ This project is a simulation-led decision intelligence platform designed to mode
 simulation_agent/
 │
 ├── main.py # Entry point for the simulation
+
 ├── input_handler.py # Handles CLI input gathering and validation
+
 ├── prompt_builder.py # Constructs the GPT prompt based on input
+
 ├── integrator.py # Interfaces with the OpenAI API
+
 ├── response.py # Parses the GPT model response into JSON
+
 ├── output.json # stores the structured results of the simulation. 
+
 ├── scoring.py # Implements custom scoring logic
+
 ├── result.txt # (Output) Memo file created by report_generator
+
 ├── output_formatter.py # Formats the final structured output
+
 └── config.py # Manages API key and settings
 
 
