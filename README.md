@@ -59,7 +59,7 @@ Execute the Program:
 bash
 python main.py
 
-***Input Required***
+##***Input Required***
 **Property Scenario:** Description of the property.
 **Time on Market:** Specify how long the property has been listed. 
 **Current Status:** Provide the current market and seller situation.
@@ -68,7 +68,7 @@ python main.py
 **Expected Output:**
 
 
-***Thought Process***
+##***Thought Process***
 **Objective**
 The purpose of this project is to simulate a real estate scenario and provide actionable insights using natural language processing capabilities.
 
