@@ -1,4 +1,4 @@
-from openai import OpenAI
+from openai import OpenAI # type: ignore
 from config import API_KEY
 
 # Initialize OpenAI client
