@@ -13,6 +13,7 @@ simulation_agent/
 ├── response.py # Parses the GPT model response into JSON
 ├── output.json # stores the structured results of the simulation. 
 ├── scoring.py # Implements custom scoring logic
+├── result.txt # (Output) Memo file created by report_generator
 ├── output_formatter.py # Formats the final structured output
 └── config.py # Manages API key and settings
 
@@ -88,6 +89,18 @@ Utilize integrator.py for API calls and response.py to parse responses. Apply sc
 
 Output Generation:
 Leverage output_formatter.py to produce well-structured results, and generate a detailed report.txt for summary and insights.
+
+
+Bonus: Diagnostic Report
+The project includes an optional one-page memo (report.txt) that covers:
+
+Diagnosis — what’s really going wrong
+
+Strategic Actions — 2–3 key recommendations
+
+Forecast — likelihood of success and why
+
+Commentary — insight into agent/seller behavior
 
 **Contributions and Feedback**
 
